@@ -1,489 +1,752 @@
- * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   scrollbar-width: none;
- }
-
-
- /* Advanced CSS */
- :root {
-   --primaryColor: #474350;
-   --secondaryColor: #fecdaa;
-   --border: #a3887d;
-   --light: #fff;
-   --highlight: #1f7a8c;
-   --darkAccent: #2e2e2e;
-   /* Advanced CSS */
-   --tableFontSize: calc(0.8em + 0.5vw);
- }
-
- /* banner */
- #banner {
-   background-color: var(--primaryColor);
-   text-align: left;
-   color: var(--secondaryColor);
-   text-decoration: none;
-   padding-block: 10px;
-   border-block: 5px solid var(--border);
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
- }
-
-
- #banner div {
-   display: flex;
-   flex-direction: column;
- }
-
- h1,
- h2 {
-   line-height: 1em;
-   font-size: 2.6vw;
-   margin-block-start: 10px;
- }
-
- h3,
- h4 {
-   text-align: center;
-   padding: 15px;
- }
-
- nav ul {
-   flex-direction: column;
-   align-items: flex-start;
-   list-style-type: none;
- }
-
- nav ul li {
-   margin-inline: 13px;
-   margin-block-end: 5px;
-   font-size: 0.8em;
- }
-
- header nav {
-   margin-inline-start: auto;
- }
-
- header nav a {
-   color: var(--secondaryColor);
-   text-decoration: none;
-   padding-block: 7px;
-   margin-inline-start: auto;
- }
-
- /* body */
-
- body {
-   background-color: var(--primaryColor);
-   color: var(--secondaryColor);
- }
-
- .mainBorder {
-   border: 5px solid var(--border);
-   box-shadow: 5px 5px 0 0 var(--light);
-   padding: 10px;
-   overflow: auto;
-   margin: 20px;
-
-   h3 {
-     font-size: 1.3em;
-     padding-block-start: 10px;
-     padding-block-end: 4px;
-     color: var(--light);
-   }
-
-   img {
-     inline-size: 100%;
-     block-size: auto;
-     border-radius: 5px;
-   }
-
-   div {
-     text-align: center;
-     padding: 0 10px;
-   }
- }
-
- main p {
-   font-size: 0.8em;
-   line-height: 1.5em;
- }
-
- .logo {
-   block-size: 60px;
- }
-
-
- footer {
-   background-color: var(--primaryColor);
-   text-align: center;
-   border-block: 5px solid var(--border);
- }
-
- footer nav ul {
-   flex-direction: column;
-   align-items: center;
-
- }
-
- footer nav a {
-   color: var(--secondaryColor);
-   text-decoration-line: none;
- }
-
- small {
-   color: var(--secondaryColor);
- }
-
- #foot {
-   font-size: 0.85em;
- }
-
- .tag {
-   color: var(--secondaryColor);
-   text-decoration: none;
-
- }
-
- .mobile {
-   display: none;
- }
-
- .aboutTable {
-   table {
-     background-color: var(--secondaryColor);
-     color: var(--primaryColor);
-     border: 2.5px solid var(--border);
-     border-collapse: collapse;
-     inline-size: 80%;
-     margin-inline-start: auto;
-     margin-inline-end: auto;
-     position: relative;
-     box-shadow: 5px 5px 0 0 var(--secondaryColor);
-     font-size: var(--tableFontSize);
-
-     td,
-     th {
-       border: 1px solid var(--darkAccent);
-       text-align: center;
-     }
-
-     th {
-       background-color: var(--primaryColor);
-       color: var(--light);
-     }
-
-     tr:nth-of-type(even) {
-       background-color: var(--border);
-       color: var(--darkAccent);
-     }
-
-     caption {
-       font-weight: bold;
-       font-size: 1.2em;
-       margin-bottom: 10px;
-       color: var(--secondaryColor);
-
-     }
-   }
-
-   p {
-     margin-block-end: 15px;
-     font-size: 1.1em;
-     line-height: 1.6em;
-     color: var(--secondaryColor);
-     font-size: var(--tableFontSize);
-   }
- }
-
- #scamTable,
- #classTable {
-   margin-block-end: 15px;
- }
-
-
- article {
-   margin: 1em 1.5em 20px 20px;
-   padding: 15px;
-   background-color: var(--border);
-   color: var(--darkAccent);
-   border-radius: 8px;
-   font-size: 1em;
- }
-
- article h3 {
-   font-size: 1.4em;
-   font-weight: bold;
-   margin-block-end: 0.8em;
- }
-
- article p {
-   font-size: 1em;
-   line-height: 1.5em;
-   color: var(--darkAccent);
- }
-
-
- #disclaimer {
-   font-style: italic;
-   font-size: 0.6em;
-   text-align: center;
- }
-
- td:empty {
-   display: none;
- }
-
- #emailForm {
-   h3 {
-     text-align: center;
-     color: #2c3e50;
-     margin-top: 20px;
-     margin-bottom: 10px;
-   }
-
-   form {
-     max-width: 90%;
-     margin: 20px auto;
-     background: var(--darkAccent);
-     padding: 15px;
-     border-radius: 8px;
-     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-   }
-
-   label {
-     display: block;
-     margin-bottom: 5px;
-     font-weight: bold;
-     color: var(--secondaryColor);
-   }
-
-   input,
-   textarea {
-     width: 100%;
-     padding: 10px;
-     margin-bottom: 15px;
-     border: 1px solid var(--darkAccent);
-     border-radius: 5px;
-     font-size: 16px;
-     background-color: var(--secondaryColor);
-   }
-
-   input:focus,
-   textarea:focus {
-     outline: none;
-     border-color: var(--border);
-   }
-
-   button {
-     width: 100%;
-     background-color: var(--border);
-     color: var(--darkAccent);
-     padding: 10px 15px;
-     border: none;
-     border-radius: 5px;
-     font-size: 16px;
-   }
-
- }
-
- @media all and (min-width: 300px) and (max-width: 400px) {
-   .logo {
-     block-size: 20%;
-     inline-size: 40px;
-     padding-inline-start: 5px;
-   }
-
-   img {
-     block-size: 30%;
-   }
- }
-
- @media all and (min-width: 769px) {
-
-   section {
-     margin-block-end: 3em;
-   }
-
-   .mainBorder>img {
-     float: right;
-     width: 20%;
-     height: auto;
-     margin-inline-end: 20px;
-
-   }
-
-   /* Advanced CSS */
-   section:nth-child(even) {
-     margin-block-start: 20px;
-
-   }
-
-   #img2 {
-     float: left;
-   }
-
-
-   header nav ul {
-     font-size: 2em;
-     display: flex;
-     flex-direction: row;
-
-   }
-
-   .mobile {
-     display: inline;
-   }
-
-   .logo {
-     float: right;
-     block-size: 100px;
-     inline-size: auto;
-     margin-inline-end: 20px;
-
-   }
-
-   nav a:hover {
-     color: var(--light);
-   }
-
-   footer nav ul {
-     list-style-type: none;
-     justify-content: center;
-     margin-bottom: 13.5px;
-     line-height: 1.2em;
-     font-size: 2em;
-   }
-
-   #banner {
-     font-size: 0.8em;
-   }
-
-   #foot {
-     inline-size: 100%;
-
-   }
-
-   h1 {
-     font-size: 3em;
-     line-height: 0.4em;
-     margin-block-end: 10px;
-   }
-
-   h2 {
-     font-size: 1.5em;
-     margin-block-start: 10px;
-     line-height: 1.5em;
-   }
-
-   .tag:hover {
-     color: var(--light);
-   }
-
-   small {
-     font-size: 0.95em;
-   }
-
-   main p {
-     font-size: 1.35em;
-     line-height: 1.6em;
-   }
-
-
-   .prices {
-     position: relative;
-   }
-
-   .prices::after {
-     content: "The prices listed below are estimates.";
-     position: absolute;
-     bottom: 100%;
-     left: 0%;
-     /* Advanced CSS */
-     transform: translateX(0) translateY(-10px);
-     background-color: var(--secondaryColor);
-     color: var(--primaryColor);
-     padding: 5px;
-     white-space: nowrap;
-     opacity: 0;
-     transition: opacity 0.5s;
-     font-size: smaller;
-     z-index: 1;
-   }
-
-   /* Advanced CSS */
-   .prices:hover::after {
-     opacity: 75%;
-     font-style: italic;
-   }
-
-   #disclaimer {
-     display: none;
-   }
-
-   article {
-     margin: 1em 1.5em 20px 20px;
-     padding: 25px;
-     font-size: 1.1em;
-
-     h3 {
-       font-size: 1.6em;
-       margin-block-end: 1em;
-     }
-
-     p {
-       font-size: 1.1em;
-       line-height: 1.6em;
-     }
-   }
-
-
-   article:hover {
-     background-color: var(--secondaryColor);
-     color: var(--primaryColor);
-     transition: background-color 0.3s ease;
-   }
-
-   #emailForm {
-
-     button:hover {
-       background-color: var(--secondaryColor);
-     }
-
-     form {
-       max-width: 600px;
-       padding: 20px;
-     }
-
-     button {
-       max-width: 200px;
-       margin: 0 auto;
-       display: block;
-       cursor: pointer;
-     }
-
-   }
- }
-
- @media all and (min-width: 768px) and (max-width: 868px) {
-   h1 {
-     font-size: 1.8em;
-   }
-
-   h2 {
-     margin-block-start: 0.5em;
-     font-size: 1.4em
-   }
-
-   .logo {
-     block-size: 70px;
-     inline-size: auto;
-   }
-
-   nav ul li {
-     white-space: nowrap;
-     font-size: 0.65em;
-   }
- }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Advanced CSS */
+:root {
+  --primaryColor: #474350;
+  --secondaryColor: #fecdaa;
+  --border: #a3887d;
+  --light: #fff;
+  --darkAccent: #2e2e2e;
+  /* Advanced CSS */
+  --tableFontSize: calc(0.8em + 0.5vw);
+}
+
+/* banner */
+#banner {
+  background-color: var(--primaryColor);
+  text-align: left;
+  color: var(--secondaryColor);
+  text-decoration: none;
+  padding-block: 10px;
+  border-block: 5px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+#banner div {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+h1,
+h2 {
+  line-height: 1em;
+  font-size: 2.6vw;
+  margin-block-start: 10px;
+}
+
+.neonText {
+  text-shadow: -2px -2px 10px var(--darkAccent), 2px 2px 10px var(--darkAccent),
+    0px 0px 10px var(--border), 0px 0px 20px var(--border), 0px 0px 30px var(--border), 0px 0px 40px var(--border), 0px 0px 50px var(--border);
+
+}
+
+
+.welcome {
+  margin-inline-start: 10px;
+  text-align: center;
+
+  a {
+    color: var(--light);
+  }
+}
+
+h3 {
+  color: var(--light);
+}
+
+h3,
+h4 {
+  text-align: center;
+  padding: 15px !important;
+}
+
+
+ul {
+  flex-direction: column;
+  align-items: flex-start;
+  list-style-type: none;
+
+}
+
+ul li {
+  margin-inline: 13px;
+  margin-block-end: 5px;
+  font-size: 0.8em;
+}
+
+header nav {
+  margin-inline-start: auto;
+}
+
+header nav a {
+  color: var(--secondaryColor);
+  text-decoration: none;
+  padding-block: 7px;
+  margin-inline-start: auto;
+  animation: fadeIn 1.7s ease-in-out;
+}
+
+/* body */
+
+body {
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor);
+}
+
+.mainBorder {
+  border: 5px solid var(--border);
+  box-shadow: 5px 5px 0 0 var(--light);
+  padding: 10px;
+  overflow: auto;
+  margin: 20px;
+
+  h3 {
+    font-size: 1.3em;
+    padding-block-start: 10px;
+    padding-block-end: 4px;
+    color: var(--light);
+  }
+
+  img {
+    inline-size: 100%;
+    block-size: auto;
+    border-radius: 5px;
+  }
+
+  div {
+    text-align: center;
+    padding: 0 10px;
+  }
+}
+
+main p {
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+
+.logo {
+  block-size: 60px;
+}
+
+
+footer {
+  background-color: var(--primaryColor);
+  text-align: center;
+  border-block: 5px solid var(--border);
+}
+
+footer nav ul {
+  flex-direction: column;
+  align-items: center;
+  padding-block-start: 5px;
+
+}
+
+footer nav a {
+  color: var(--secondaryColor);
+  text-decoration-line: none;
+}
+
+small {
+  color: var(--secondaryColor);
+}
+
+#foot {
+  font-size: 0.85em;
+}
+
+.tag {
+
+  color: var(--secondaryColor);
+  text-decoration: none;
+
+}
+
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: inline;
+}
+
+.table {
+  table {
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+    border: 2.5px solid var(--border);
+    border-collapse: collapse;
+    inline-size: 80%;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    position: relative;
+    box-shadow: 5px 5px 0 0 var(--secondaryColor);
+    font-size: var(--tableFontSize);
+    animation: fadeIn 1.5s ease-in-out;
+
+    td,
+    th {
+      border: 1px solid var(--darkAccent);
+      text-align: center;
+    }
+
+    th {
+      background-color: var(--primaryColor);
+      color: var(--light);
+    }
+
+    tr:nth-of-type(even) {
+      background-color: var(--border);
+      color: var(--darkAccent);
+    }
+
+    caption {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      color: var(--secondaryColor);
+
+    }
+  }
+
+  p {
+    margin-block-end: 15px;
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: var(--secondaryColor);
+    font-size: var(--tableFontSize);
+  }
+}
+
+#scamTable,
+#classTable {
+  margin-block-end: 15px;
+}
+
+
+article {
+  margin: 1em 1.5em 20px 20px;
+  padding: 15px;
+  background-color: var(--border);
+  color: var(--darkAccent);
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+article h3 {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-block-end: 0.8em;
+}
+
+article p {
+  font-size: 1em;
+  line-height: 1.5em;
+  color: var(--darkAccent);
+}
+
+
+#disclaimer {
+  font-style: italic;
+  font-size: 0.6em;
+  text-align: center;
+}
+
+td:empty {
+  display: none;
+}
+
+#form {
+  display: grid;
+  inline-size: 75%;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: var(--darkAccent);
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+
+  h3 {
+    text-align: center;
+    color: var(--secondaryColor);
+    margin-block-start: 20px;
+    margin-block-end: 10px;
+  }
+
+  label {
+    font-weight: bold;
+    color: var(--secondaryColor);
+    display: block;
+    margin-block-start: 1em;
+  }
+
+
+  :is(textarea, select, input[type="text"], input[type="email"]) {
+    inline-size: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-block-end: 15px;
+    border: 1px solid var(--darkAccent);
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: var(--secondaryColor);
+  }
+
+  :is(input:focus,
+    textarea:focus,
+    select:focus) {
+    outline: none;
+    border-color: var(--border);
+  }
+
+  input[type="checkbox"]+label,
+  input[type="radio"]+label {
+    padding-block-start: 0;
+    margin-block-start: 0;
+    padding-inline-start: 10px;
+  }
+
+
+  fieldset {
+    border: 1px solid var(--darkAccent);
+    padding: 15px;
+    margin: 0 0;
+    max-inline-size: 600px;
+    border-radius: 8px;
+    margin-block-end: 15px;
+
+    div {
+      display: flex;
+    }
+  }
+
+  legend {
+    font-weight: bold;
+    margin-block-end: 10px;
+    font-size: 1.4em;
+    color: var(--light);
+  }
+
+  button {
+    background-color: var(--border);
+    color: var(--darkAccent);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  small {
+    margin-block-end: 20px;
+    display: block;
+    font-size: 0.9em;
+    color: var(--secondaryColor);
+  }
+
+  .fielset {
+    border: 1px solid var(--darkAccent);
+    border-radius: 8px;
+    inline-size: 100%;
+    max-inline-size: 600px;
+  }
+}
+
+#action {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-block-start: 20px;
+}
+
+.review {
+  margin: 30px;
+  padding-inline-start: 7px;
+  padding-block-start: 10px;
+  border: 5px solid var(--border);
+  box-shadow: 5px 5px 0 0 var(--light);
+
+  strong {
+    color: var(--light);
+  }
+
+  p {
+    line-height: 120%;
+
+  }
+}
+
+.customer {
+  font-style: italic;
+  font-size: x-small;
+  text-align: right;
+  padding-inline-end: 3px;
+  padding-block-start: 3px;
+  padding-block-end: 3px;
+  color: var(--light);
+}
+
+.video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  block-size: 100%;
+}
+
+video {
+  inline-size: 80%;
+  block-size: auto;
+  margin-block-end: 10px;
+}
+
+#video {
+  color: var(--border);
+  font-size: xx-small;
+  padding: 5px;
+}
+
+.staff {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  justify-items: center;
+
+  .staffMember {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      inline-size: 110px;
+      block-size: 110px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+
+  p {
+    margin-block-start: 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  h3 {
+    margin-block-end: 10px;
+  }
+}
+
+#domain {
+  font-size: 0.2em;
+  padding-block-start: 10px;
+}
+
+.link {
+
+  ul {
+    list-style-type: none;
+    padding-inline-start: 10px;
+    align-items: center;
+  }
+
+  ul li::before {
+    background-image: url(../images/colored-hacker.png);
+    inline-size: 15px;
+    background-size: cover;
+    content: "";
+    margin-right: 10px;
+    display: inline-block;
+    block-size: 15px;
+
+  }
+
+  h4,
+  h3 {
+    text-align: left;
+  }
+
+  a {
+    color: var(--secondaryColor);
+  }
+}
+
+
+
+
+
+@media all and (min-width: 300px) and (max-width: 400px) {
+  .logo {
+    block-size: 20%;
+    inline-size: 40px;
+    padding-inline-start: 5px;
+  }
+
+  img {
+    block-size: 30%;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 868px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    margin-block-start: 0.5em;
+    font-size: 1.4em
+  }
+
+  .logo {
+    block-size: 70px;
+    inline-size: auto;
+  }
+
+  nav ul li {
+    white-space: nowrap;
+    font-size: 0.65em;
+  }
+}
+
+@media all and (min-width: 769px) {
+
+  #welcome {
+    a:hover {
+      color: var(--light);
+      font-style: italic;
+      font-weight: bold;
+    }
+  }
+
+  section {
+    margin-block-end: 3em;
+  }
+
+  .mainBorder>img {
+    float: right;
+    width: 20%;
+    height: auto;
+    margin-inline-end: 20px;
+
+  }
+
+  /* Advanced CSS */
+  section:nth-child(even) {
+    margin-block-start: 20px;
+
+  }
+
+  #img2 {
+    float: left;
+  }
+
+
+  header ul {
+    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .mobile {
+    display: inline;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .logo {
+    float: right;
+    block-size: 100px;
+    inline-size: auto;
+    margin-inline-end: 20px;
+
+  }
+
+  a:hover {
+    color: var(--light);
+  }
+
+  footer nav ul {
+    list-style-type: none;
+    justify-content: center;
+    margin-bottom: 13.5px;
+    line-height: 1.2em;
+    font-size: 2em;
+  }
+
+  #banner {
+    font-size: 0.8em;
+  }
+
+  #foot {
+    inline-size: 100%;
+
+  }
+
+  h1 {
+    font-size: 3em;
+    line-height: 0.4em;
+    margin-block-end: 10px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    margin-block-start: 10px;
+    line-height: 1.5em;
+  }
+
+  .tag:hover {
+    color: var(--light);
+  }
+
+  small {
+    font-size: 0.95em;
+  }
+
+  main p {
+    font-size: 1.35em;
+    line-height: 1.6em;
+  }
+
+
+  .prices {
+    position: relative;
+  }
+
+  .prices::after {
+    content: "*The prices listed below are estimates.";
+    position: absolute;
+    bottom: 100%;
+    left: 0%;
+    /* Advanced CSS */
+    transform: translateX(0) translateY(-10px);
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+    padding: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.5s;
+    font-size: smaller;
+    z-index: 1;
+  }
+
+  /* Advanced CSS */
+  .prices:hover::after {
+    opacity: 75%;
+    font-style: italic;
+  }
+
+  #disclaimer {
+    display: none;
+  }
+
+  article {
+    margin: 1em 1.5em 20px 20px;
+    padding: 25px;
+    font-size: 1.1em;
+
+    h3 {
+      font-size: 1.6em;
+      margin-block-end: 1em;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6em;
+    }
+  }
+
+
+  article:hover {
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+    transition: background-color 0.3s ease;
+
+    h3 {
+      color: var(--darkAccent);
+    }
+  }
+
+
+  .video {
+    display: flex;
+    justify-content: center;
+    inline-size: 100%;
+
+    video {
+      max-inline-size: 100%;
+      inline-size: 50%;
+      block-size: auto;
+    }
+
+  }
+
+  .reviewContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .reviewFlex {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    inline-size: 100%;
+  }
+
+  .review {
+    flex: 1;
+    padding-inline-start: 15px;
+  }
+
+  .customer {
+    font-size: 1rem;
+    padding-block-start: 15px;
+  }
+
+
+  .staff {
+    img {
+      inline-size: 250px !important;
+      block-size: 250px !important;
+      margin-block-start: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      padding-block-start: 7px;
+      padding-block-end: 7px;
+    }
+
+    h4 {
+      padding-inline-start: 20px;
+      color: var(--light);
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
